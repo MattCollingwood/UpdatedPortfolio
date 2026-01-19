@@ -20,7 +20,7 @@ const Footer = () => {
               <Github size={20} />
             </a>
             <a
-              href="https://linkedin.com/in/mattcollingwood"
+              href="https://www.linkedin.com/in/matt-collingwood-54545b105/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-muted-foreground hover:text-primary transition-colors"
@@ -29,7 +29,7 @@ const Footer = () => {
               <Linkedin size={20} />
             </a>
             <a
-              href="mailto:matt@mattcollingwood.com"
+              href="mailto:matt.d.collingwood@gmail.com"
               className="text-muted-foreground hover:text-primary transition-colors"
               aria-label="Email"
             >
