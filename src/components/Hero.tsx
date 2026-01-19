@@ -87,7 +87,7 @@ const Hero = () => {
                 <Github size={24} />
               </a>
               <a
-                href="https://linkedin.com/in/mattcollingwood"
+                href="https://www.linkedin.com/in/matt-collingwood-54545b105/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
@@ -96,7 +96,7 @@ const Hero = () => {
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:matt@mattcollingwood.com"
+                href="mailto:matt.d.collingwood@gmail.com"
                 className="text-muted-foreground hover:text-primary transition-colors"
                 aria-label="Email"
               >
@@ -114,10 +114,13 @@ const Hero = () => {
           >
             <PixelGravityCanvas
               imageSrc="/profile-image.png"
+              morphToImage="/profile-image-2.png"
               width={400}
               height={400}
               pixelSize={3}
               gravity={1.2}
+              morphDelay={2000}
+              morphDuration={2000}
             />
           </motion.div>
         </div>
