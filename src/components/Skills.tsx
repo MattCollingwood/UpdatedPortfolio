@@ -26,14 +26,14 @@ const Skills = () => {
 
   return (
     <section id="skills" className="py-24 px-6 bg-secondary/30" ref={ref}>
-      <div className="container mx-auto max-w-4xl">
+      <div className="container mx-auto max-w-7xl">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
           <h2 className="section-heading flex items-center gap-4">
-            <span className="text-primary font-mono text-xl">03.</span>
+            <span className="text-primary font-mono text-xl">01.</span>
             Skills & Technologies
             <span className="h-px bg-border flex-1 ml-4" />
           </h2>

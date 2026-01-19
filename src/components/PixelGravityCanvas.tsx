@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 
-
 interface PixelGravityCanvasProps {
   imageSrc: string;
   width?: number;
@@ -13,7 +12,7 @@ export default function PixelGravityCanvas({
   imageSrc,
   width = 400,
   height = 300,
-  pixelSize = 6,
+  pixelSize = 3,
   gravity = 1.2,
 }: PixelGravityCanvasProps) {
   const canvasRef = useRef<HTMLCanvasElement>(null);
@@ -63,10 +62,10 @@ export default function PixelGravityCanvas({
             pixels.push({
               x,
               targetY: y,
-              y: -Math.random() * height, // start above canvas
+              y: -Math.random() * height,
               vy: 0,
               color: `rgba(${r},${g},${b},${a})`,
-              delay: y * .5, // stagger by row (top-down effect)
+              delay: y * .5,
             });
           }
         }
