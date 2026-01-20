@@ -22,7 +22,7 @@ const Contact = () => {
           </p>
 
           <motion.a
-            href="mailto:matt@mattcollingwood.com"
+            href="mailto:matt.d.collingwood@gmail.com"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-primary-foreground rounded-md font-medium hover:bg-primary/90 transition-colors glow"
