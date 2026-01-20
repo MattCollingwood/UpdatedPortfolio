@@ -114,9 +114,9 @@ const allTags = ["All", "Python", "SQLlite", "React", "JavaScript", "HTML", "CSS
 
 const navLinks = [
   { name: "Home", href: "/" },
-  { name: "About", href: "/#about" },
-  { name: "Projects", href: "/projects" },
   { name: "Skills", href: "/#skills" },
+  { name: "Projects", href: "/projects" },
+  { name: "About", href: "/#about" },
   { name: "Contact", href: "/contact" },
 ];
 
@@ -150,7 +150,7 @@ const ProjectsPage = () => {
               </a>
             ))}
             <a
-              href="/Matt_Collingwood_Resume.pdf"
+              href="/Collingwood, Matt - Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 py-2 border border-primary text-primary rounded-md hover:bg-primary/10 transition-colors text-sm font-medium"
@@ -190,7 +190,7 @@ const ProjectsPage = () => {
                   </a>
                 ))}
                 <a
-                  href="/Matt_Collingwood_Resume.pdf"
+                  href="/Collingwood, Matt - Resume.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="px-4 py-2 border border-primary text-primary rounded-md text-center hover:bg-primary/10 transition-colors"
