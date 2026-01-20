@@ -31,15 +31,7 @@ const Hero = () => {
             >
               Matt Collingwood
             </motion.h1>
-            
-            <motion.h2
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.4 }}
-              className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-muted-foreground mb-6"
-            >
-              I build things for the web.
-            </motion.h2>
+          
             
             <motion.p
               initial={{ opacity: 0 }}
@@ -64,7 +56,7 @@ const Hero = () => {
                 View My Work
               </a>
               <a
-                href="#contact"
+                href="/contact"
                 className="px-8 py-3 border border-primary text-primary rounded-md font-medium hover:bg-primary/10 transition-colors"
               >
                 Get In Touch
@@ -113,14 +105,11 @@ const Hero = () => {
             className="flex-1 flex justify-center items-center"
           >
             <PixelGravityCanvas
-              imageSrc="/profile-image.png"
-              morphToImage="/profile-image-2.png"
+              imageSrc="/profile-image-2.png"
               width={400}
               height={400}
               pixelSize={3}
               gravity={1.2}
-              morphDelay={2000}
-              morphDuration={2000}
             />
           </motion.div>
         </div>
@@ -131,7 +120,7 @@ const Hero = () => {
           transition={{ delay: 1 }}
           className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block"
         >
-          <a href="#about" className="text-muted-foreground hover:text-primary transition-colors">
+          <a href="#skills" className="text-muted-foreground hover:text-primary transition-colors">
             <ArrowDown size={24} className="animate-bounce" />
           </a>
         </motion.div>

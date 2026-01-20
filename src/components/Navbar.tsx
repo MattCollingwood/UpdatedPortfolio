@@ -3,10 +3,10 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "About", href: "#about" },
-  { name: "Projects", href: "/projects" },
   { name: "Skills", href: "#skills" },
-  { name: "Contact", href: "#contact" },
+  { name: "Projects", href: "/projects" },
+  { name: "About", href: "#about" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
@@ -21,7 +21,7 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <a href="#" className="text-xl font-bold text-gradient">
-          MC
+          <img src="/Logo.svg" alt="Logo" className="h-8 w-8" />
         </a>
 
         {/* Desktop Nav */}
