@@ -8,15 +8,11 @@ const skillCategories = [
   },
   {
     title: "Backend",
-    skills: ["Node.js", "Python", "Express", "FastAPI", "REST APIs", "GraphQL"],
+    skills: ["Node.js", "Python", "Express", "FastAPI", "REST APIs", "Dash", "Bootstrap"],
   },
   {
     title: "Database",
-    skills: ["PostgreSQL", "MongoDB", "MySQL", "Redis", "Firebase"],
-  },
-  {
-    title: "Tools & Others",
-    skills: ["Git", "Docker", "AWS", "Linux", "CI/CD", "Agile/Scrum"],
+    skills: ["PostgreSQL", "MongoDB", "MySQL", "SQLite"],
   },
 ];
 
@@ -38,7 +34,7 @@ const Skills = () => {
             <span className="h-px bg-border flex-1 ml-4" />
           </h2>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mt-12">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
             {skillCategories.map((category, categoryIndex) => (
               <motion.div
                 key={category.title}
