@@ -39,8 +39,7 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="text-muted-foreground text-lg md:text-xl max-w-xl mx-auto md:mx-0 mb-8"
             >
-              I'm a full-stack developer specializing in building exceptional digital experiences. 
-              Currently focused on creating accessible, human-centered products.
+              I'm a full-stack developer that designs and builds applications with a focus on clean UX, accessibility, and creating products people actually enjoy using.
             </motion.p>
 
             <motion.div
@@ -105,7 +104,7 @@ const Hero = () => {
             className="flex-1 flex justify-center items-center"
           >
             <PixelGravityCanvas
-              imageSrc="/profile-image-2.png"
+              imageSrc="/linkedin.jpg"
               width={400}
               height={400}
               pixelSize={3}
