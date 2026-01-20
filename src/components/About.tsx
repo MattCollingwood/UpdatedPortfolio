@@ -23,27 +23,15 @@ const About = () => {
           <div className="grid md:grid-cols-3 gap-12 mt-8">
             <div className="md:col-span-2 space-y-4">
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Hello! I'm Matt, a passionate software developer who enjoys creating things 
-                that live on the internet. My interest in web development started back when 
-                I decided to try creating custom websites — turns out hacking together 
-                a basic site taught me a lot about HTML & CSS!
+                Based in Maryland, I graduated from Towson University with a degree in Mass Communication. Since then, I’ve spent over a decade working in marketing and client management. My professional journey has taken me from supporting local businesses to partnering with global marketing agencies, with client needs across the full spectrum of marketing services.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Fast-forward to today, and I've had the privilege of working at various 
-                companies, building software that makes a difference. My main focus these 
-                days is building accessible, inclusive products and digital experiences.
+                Over time, I found myself increasingly drawn to the technical side of my engagements, supporting engineering teams on complex projects such as Customer Data Platform (CDP) migrations, Salesforce implementations, cloud storage solutions, and responsive web development. These experiences sparked a deep curiosity and passion for the engineering side of the work, ultimately inspiring me to dive into programming myself.
               </p>
               <p className="text-muted-foreground text-lg leading-relaxed">
-                Here are a few technologies I've been working with recently:
+                After dedicating over a year to learning how to code and building my own projects, I am now able to bring a unique blend of strategic communication skills, marketing experience, and a growing technical toolkit—ready to contribute to teams building smart, scalable solutions. I will continue to grow my capabilities to better serve my clients and team members along my career journey.
               </p>
-              <ul className="grid grid-cols-2 gap-2 mt-4">
-                {["JavaScript (ES6+)", "TypeScript", "React", "Node.js", "Python", "PostgreSQL"].map((tech) => (
-                  <li key={tech} className="flex items-center gap-2 text-muted-foreground">
-                    <span className="text-primary">▹</span>
-                    <span className="font-mono text-sm">{tech}</span>
-                  </li>
-                ))}
-              </ul>
+              
             </div>
 
             <motion.div
@@ -55,8 +43,7 @@ const About = () => {
               <div className="relative w-full aspect-square rounded-lg overflow-hidden">
                 <div className="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-colors duration-300 z-10" />
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
-                  alt="Matt Collingwood"
+                  src="/linkedin.jpg"
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-300"
                 />
               </div>
