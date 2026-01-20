@@ -21,23 +21,30 @@ const ContactPage = () => {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
 
   const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Simulate form submission (replace with your actual form handling)
-    try {
-      // Add your form submission logic here
-      // For now, we'll just simulate success
-      await new Promise(resolve => setTimeout(resolve, 1000));
+  e.preventDefault();
+  
+  try {
+    const response = await fetch("https://formspree.io/f/xnjjjpld", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
       setStatus("success");
       setFormData({ name: "", email: "", phone: "", message: "" });
-      
-      // Reset success message after 5 seconds
       setTimeout(() => setStatus("idle"), 5000);
-    } catch (error) {
+    } else {
       setStatus("error");
       setTimeout(() => setStatus("idle"), 5000);
     }
-  };
+  } catch (error) {
+    setStatus("error");
+    setTimeout(() => setStatus("idle"), 5000);
+  }
+};
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
