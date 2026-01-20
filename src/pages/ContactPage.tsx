@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from "framer-motion";
 import { useState } from "react";
 import { Menu, X, Mail, Github, Linkedin } from "lucide-react";
+import Navbar from "@/components/Navbar";
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -55,7 +56,8 @@ const ContactPage = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Navbar */}
+      <Navbar />
+      {/* Navbar
       <motion.nav
         initial={{ y: -100 }}
         animate={{ y: 0 }}
@@ -68,7 +70,7 @@ const ContactPage = () => {
           </a>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
+          {/* <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <a key={link.name} href={link.href} className="nav-link">
                 {link.name}
@@ -82,20 +84,20 @@ const ContactPage = () => {
             >
               Resume
             </a>
-          </div>
+          </div> */}
 
           {/* Mobile Menu Button */}
-          <button
+          {/* <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden text-foreground p-2"
             aria-label="Toggle menu"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
-        </div>
+        </div> */}
 
         {/* Mobile Menu */}
-        <AnimatePresence>
+        {/* <AnimatePresence>
           {isOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
@@ -126,7 +128,7 @@ const ContactPage = () => {
             </motion.div>
           )}
         </AnimatePresence>
-      </motion.nav>
+      </motion.nav> */} */
 
       {/* Main Content */}
       <div className="pt-32 px-6 pb-24">
