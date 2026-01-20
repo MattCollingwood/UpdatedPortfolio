@@ -3,14 +3,22 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
-  { name: "Skills", href: "#skills" },
+  { name: "Home", href: "/" },
   { name: "Projects", href: "/projects" },
-  { name: "About", href: "#about" },
   { name: "Contact", href: "/contact" },
 ];
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    // If the link is a hash link and we're not on the home page
+    if (href.startsWith('#') && window.location.pathname !== '/') {
+      e.preventDefault();
+      // Navigate to home page with the hash
+      window.location.href = '/' + href;
+    }
+  };
 
   return (
     <motion.nav
@@ -20,14 +28,19 @@ const Navbar = () => {
       className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border"
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#" className="text-xl font-bold text-gradient">
+        <a href="/" className="text-xl font-bold text-gradient">
           <img src="/Logo.svg" alt="Logo" className="h-8 w-8" />
         </a>
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center gap-8">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href} className="nav-link">
+            <a 
+              key={link.name} 
+              href={link.href} 
+              onClick={(e) => handleNavClick(e, link.href)}
+              className="nav-link"
+            >
               {link.name}
             </a>
           ))}
@@ -65,7 +78,10 @@ const Navbar = () => {
                 <a
                   key={link.name}
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(e) => {
+                    handleNavClick(e, link.href);
+                    setIsOpen(false);
+                  }}
                   className="nav-link text-lg py-2"
                 >
                   {link.name}
