@@ -6,21 +6,21 @@ const projects = [
   {
     title: "Swim Workout Tracker",
     description:
-      "A data-driven swim training analytics platform that seamlessly syncs workout data and delivers performance insights through an interactive Python dashboard.",
+      "Swim Workout Tracker is a Python-based analytics dashboard that syncs Apple Watch swim data and visualizes performance metrics through interactive charts using Dash, Plotly, and Pandas.",
     link: "https://swim-workout-tracker.onrender.com/",
     image: "/SwimWorkoutTracker.png",
   },
   {
     title: "Dominion Root Website",
     description:
-      "This is a community website for my friend's YouTube channel, Dominion Root. I actively manage this page.",
+      "DominionRoot is a live website built with TypeScript and React for the Dominion Root YouTube channel, hosted on Vercel and featuring modern web technologies like Tailwind CSS and Vite.",
     link: "https://dominion-root.vercel.app/",
     image: "/dominionroot.png",
   },
   {
     title: "Choose Your Own Adventure",
     description:
-      "This React application allows users to navigate through a story by making choices that affect the outcome.",
+      "ChooseYourOwnAdventure is a React-based web application built with Create React App, primarily using JavaScript, CSS, and HTML for an interactive storytelling experience.",
     link: "https://matt-collingwood-choose-adventure.netlify.app/",
     image: "/ChooseYourOwnAdventure.png",
   },
