@@ -103,7 +103,6 @@ const isInView = useInView(ref, { once: true, margin: "-100px" });
                   transition={{ duration: 0.5, delay: 0.5 + index * 0.1 }}
                   className="grid grid-cols-1 md:grid-cols-3 gap-6 pb-8 border-b border-border last:border-b-0"
                 >
-                  {/* Left Column: Role, Company, Location, Years */}
                   <div className="md:col-span-1 space-y-1">
                     <h4 className="text-lg font-semibold text-foreground">
                       {job.role}
@@ -116,7 +115,7 @@ const isInView = useInView(ref, { once: true, margin: "-100px" });
                     </p>
                   </div>
 
-                  {/* Right Column: Description */}
+
                   <div className="md:col-span-2">
                     <p className="text-muted-foreground leading-relaxed text-sm">
                       {job.description}
