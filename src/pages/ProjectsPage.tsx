@@ -8,8 +8,8 @@ const allProjects = [
     title: "Swim Workout Tracker",
     description: "A data-driven swim training analytics platform that seamlessly syncs workout data and delivers insights through an interactive Python dashboard.",
     image: "/SwimWorkoutTracker.png",
-    link: "https://swim-workout-tracker.onrender.com/",
-    tags: ["Python", "Dash", "Bootstrap"],
+    link: "https://swim-dashboard-a06a28567b18.herokuapp.com/",
+    tags: ["Python", "Dash", "Bootstrap", "heroku"],
   },
   {
     title: "Dominion Root's Website",
@@ -111,7 +111,7 @@ const allProjects = [
   },
 ];
 
-const allTags = ["All", "Python", "SQLlite", "React", "JavaScript", "HTML", "CSS", "Redux", "Dash", "Bootstrap", "Vercel"];
+const allTags = ["All", "Python", "SQLlite", "React", "JavaScript", "HTML", "CSS", "Redux", "Dash", "Bootstrap", "Vercel", "Heroku"];
 
 
 
