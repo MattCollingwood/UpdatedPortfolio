@@ -7,7 +7,7 @@ const projects = [
     title: "Swim Workout Tracker",
     description:
       "Swim Workout Tracker is a Python-based analytics dashboard that syncs Apple Watch swim data and visualizes performance metrics through interactive charts using Dash, Plotly, and Pandas.",
-    link: "https://updated-swim-tracker-matt-5c04be4d02e8.herokuapp.com/#",
+    link: "https://swim-dashboard-a06a28567b18.herokuapp.com/",
     image: "/SwimWorkoutTracker.png",
   },
   {
